@@ -1,0 +1,969 @@
+@font-face {
+  font-family: pixel;
+  src: url('C:\Users\gvssr\Downloads\ChatApp\tcc\fonts\Minecraft.ttf');
+}
+
+
+
+/* header------------------------------------------------------------------- */
+
+.header {
+  font-family: pixel;
+  position: relative;
+  bottom: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ProfilePic------------------------------------------------------------ */
+.pfp {
+  margin-right: 10px;
+  transition: box-shadow .3s;
+  /* position: relative;
+  top: 10px;
+  right: -46%; */
+  /* transform: translateX(1000%); */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.pfp:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, .7);
+}
+
+.pfpicon {
+  height: 30px;
+  width: 30px;
+}
+
+.menu {
+  margin-left: 10px;
+  transition: box-shadow .3s;
+  /* position: relative;
+  top: -3%;
+  right: 46%; */
+  /* transform: translateX(1000%); */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.menu:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, .7);
+}
+
+.menuicon {
+  position: relative;
+  right: 0px;
+  top: 1.5px;
+  height: 30px;
+  width: 30px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* NavBar----------------------------------------------------------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* Distribute items evenly */
+  align-items: center;
+  position: relative;
+  right: 0.15%;
+  top: -2.7%;
+  height: 70px;
+  width: 100%;
+  /* width: 1500px; */
+  border-style: solid;
+  border-radius: 40px;
+
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* Chat-container--------------------------------------------------------------------- */
+
+.chatcontainer {
+  position: relative;
+  right: -0.3%;
+  top: 100%;
+  height: 3000px;
+  width: 99%;
+  /* width: 1502px; */
+  border-style: solid;
+  border-radius: 40px;
+}
+
+/* Card--------------------------------------------------- */
+
+.cards {
+  justify-content: start;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card {
+  height: 200px;
+  position: relative;
+  top: -100px;
+  border-style: solid;
+  width: 150px;
+  border-radius: 8px;
+  margin: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, .7);
+}
+
+.icon {
+  position: relative;
+  top: 30px;
+}
+
+.name {
+  position: relative;
+  top: 25px;
+  font-family: pixel;
+  font-size: larger;
+}
+
+.chat {
+  position: relative;
+  top: 25px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-family: pixel;
+  font-size: medium;
+}
+
+.chat:hover {
+  background-color: #838282;
+  color: #000;
+}
+
+/* M-header----------------------------------------------------- */
+
+.mheader {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  top: -120px;
+  right: 46.67%;
+  font-family: pixel;
+}
+
+
+/* movie card------------------------------------------------------------- */
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.movie-card {
+  justify-content: space-evenly;
+  position: relative;
+  left: 8px;
+  top: -130px;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  padding-left: 38px;
+  width: 190px;
+  height: 320px;
+}
+
+@media (min-aspect-ratio: 4/3) {
+  .movie-card {
+    padding-left: 30px;
+  }
+}
+
+.movie-card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, .7);
+
+}
+
+.movie-thumbnail {
+  border-radius: 6px;
+  max-width: 100%;
+  height: 80%;
+}
+
+.movie-title {
+  font-family: pixel;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.viewm {
+  position: relative;
+  top: -16px;
+  padding: 9px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-family: pixel;
+  font-size: medium;
+}
+
+.viewm:hover {
+  background-color: #838282;
+  color: #000;
+}
+
+/* menu-container------------------------------------------- */
+
+/* MenuBar.css */
+
+.menu-container {
+  position: fixed;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  overflow-y: auto;
+  transition: left 0s;
+}
+
+.menu-option {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 0px;
+  padding: 6px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-family: pixel;
+  font-size: larger;
+}
+
+.menu-option:hover {
+  background-color: #838282;
+  color: #000;
+}
+
+.menu-container.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  left: 0;
+}
+
+
+.back-button {
+  position: relative;
+  top: 67%;
+  padding: 6px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-family: pixel;
+  font-size: larger;
+}
+
+.back-button:hover {
+  background-color: #838282;
+  color: #000;
+}
+
+/* movieplayer-------------------------------------------------------------------------- */
+
+
+.movie-card {
+  position: relative;
+}
+
+.dialog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Ensure it's on top of other content */
+}
+
+.dialog {
+  border-radius: 15px;
+  position: fixed;
+  height: 80%;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1001;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.dialog-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  /* Adjust the opacity as needed */
+  backdrop-filter: blur(5px);
+  /* Adjust the blur amount as needed */
+  z-index: 1000;
+  /* Place the backdrop behind the dialog */
+}
+
+video {
+  width: 90%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+.back-buttonm {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.back-buttonm {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-family: pixel;
+  font-size: larger;
+}
+
+.back-buttonm:hover {
+  background-color: #838282;
+  color: #000;
+}
+
+/* headerc-------------------------------------------------- */
+
+.headerc {
+  position: relative;
+  top: 15%;
+  font-family: pixel;
+}
+
+/* chat app------------------------------------------------- */
+
+/* Chatcard.js */
+.chat-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(2px);
+  padding: 20px;
+  z-index: 2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  height: 93%;
+  width: 90%;
+  border-radius: 8px;
+}
+
+.chat-header {
+  font-family: pixel;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  font-family: pixel;
+  font-size: large;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #838282;
+  color: #000;
+}
+
+/* music player------------------------------------------------------------------------------- */
+
+.musicplayer {
+  align-items: center;
+  justify-content: center;
+}
+
+/* chatapp----------------------------------------------------------------------------------- */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input {
+  font-family: pixel;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 1.2em;
+
+}
+
+
+.buttonc {
+  border-radius: 10px;
+  font-family: pixel;
+  border: solid;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.buttonc:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+.container {
+  position: relative;
+}
+
+.register {
+  border-radius: 10px;
+  position: fixed;
+  padding: 30px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  top: 35%;
+  left: 32%;
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-box {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  margin: 0px 0px;
+  border-radius: 20px;
+  height: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.member-list {
+  width: 20%;
+}
+
+.chat-content {
+  width: 80%;
+  margin-left: 10px;
+}
+
+.chat-messages {
+  border-radius: 15px;
+  height: 80%;
+  border: 1px solid #000;
+}
+
+.send-message {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-message {
+  font-family: pixel;
+  font-size: larger;
+  width: 90%;
+  border-radius: 50px;
+}
+
+ul {
+  border-radius: 15px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.send-button {
+  font-family: pixel;
+  font-size: x-large;
+  width: 10%;
+  border-radius: 50px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background: #000000;
+  color: #eee;
+}
+
+.member {
+  font-family: pixel;
+  border-radius: 10px;
+  padding: 10px;
+  background: #eee;
+  border: #000;
+  cursor: pointer;
+  margin: 5px 2px;
+  box-shadow: 0 8px 8px -4px rgb(75, 75, 75);
+}
+
+.member.active {
+  background: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.member:hover {
+  background: grey;
+  color: #fff;
+}
+
+.avatar {
+  font-family: pixel;
+  background-color: rgb(0, 0, 0);
+  padding: 3px 5px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.avatar.self {
+  color: #000;
+  background-color: rgb(153, 153, 153);
+}
+
+.message {
+  font-family: pixel;
+  font-size: larger;
+  padding: 5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: 5px 10px;
+}
+
+.message-data {
+  font-family: pixel;
+  padding: 5px;
+}
+
+.message.self {
+  justify-content: end;
+}
+
+/* images---------------------------------------------------------------------------------- */
+
+.prev-button {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  padding: 9px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-family: pixel;
+  font-size: medium;
+
+
+}
+
+.prev-button:hover {
+  background-color: #838282;
+  color: #000;
+}
+
+.next-button {
+  position: absolute;
+  top: 70%;
+  right: 0%;
+  padding: 9px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-family: pixel;
+  font-size: medium;
+
+
+}
+
+.next-button:hover {
+  background-color: #838282;
+  color: #000;
+}
+
+.file-upload-container {
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Heading styles */
+h2 {
+  font-family: pixel;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.title {
+  position: relative;
+  bottom: -50px;
+}
+
+/* Upload area styles */
+.upload-area {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.file-input-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.input-file {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.upload-area:hover {
+  border-color: #2b2b2b;
+  /* Change the border color on hover */
+}
+
+/* Input file styles (hidden) */
+.input-file {
+  display: none;
+}
+
+/* Description textarea styles */
+textarea {
+  position: absolute;
+  width: 30%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* Upload button styles */
+.upload-button {
+  font-family: pixel;
+  margin-top: 20px;
+  background-color: #000000;
+  color: #2897ff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.upload-button:hover {
+  background-color: #828282;
+  /* Darker shade on hover */
+}
+
+.delete-button {
+  font-family: pixel;
+  background-color: #000000;
+  color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.delete-button:hover {
+  background-color: #828282;
+  /* Darker shade on hover */
+}
+
+.img-description {
+  text-transform: uppercase;
+  font-family: pixel;
+  font-size: large;
+}
+
+/* videos-------------------------------------------------------------------------- */
+
+/* video-grid.css */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  margin: 40px;
+}
+
+/* .video-container {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-container:hover {
+  transform: scale(1.05);
+} */
+
+/* video-grid.css */
+
+.video-container {
+  width: 400px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.video-container:hover {
+  transform: scale(1.1);
+}
+
+.video-container img {
+  width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.video-description {
+  padding: 10px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 0 0 8px 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Adjust the styling as needed */
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.thumbnail {
+  border-radius: 10px;
+}
+
+.video-title {
+  font-family: pixel;
+  font-size: x-large;
+}
+
+/* music--------------------------------------------------------------------- */
+
+/* Music.css */
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.playlist {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.track-card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.track-card:hover {
+  transform: scale(1.05);
+}
+
+.track-card img {
+  max-width: 100%;
+}
+
+.track-card.selected {
+  border-color: #007bff;
+}
+
+.music-player {
+  display: none;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.music-player.active {
+  display: block;
+}
+
+.player-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.track-progress {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.volume-controls {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.prev-next-buttons {
+  margin-top: 10px;
+}
+
+buttonmu {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+buttonmu:hover {
+  background-color: #0056b3;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+/* Add this to your Music.css or create a new CSS file for your styles */
+
+.playlist-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.playlist-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.playlist-button.selected {
+  background-color: #0056b3;
+}
+
+.playlist-button:hover {
+  background-color: #0056b3;
+}
+
+/* Customize and add more styles as needed */

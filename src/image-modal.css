@@ -1,0 +1,62 @@
+/* image-modal.css */
+
+/* Modal Overlay */
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure it's displayed above other content */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: white;
+    max-width: 90%;
+    /* Adjust the width as needed */
+    max-height: 90%;
+    /* Adjust the height as needed */
+    overflow: auto;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.close-button:hover {
+    color: #333;
+    /* Darken the color on hover */
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 95%;
+        /* Adjust the width for smaller screens */
+        max-height: 90vh;
+        /* Adjust the maximum height for smaller screens */
+    }
+}
