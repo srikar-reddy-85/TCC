@@ -7,7 +7,7 @@ import MenuBar from './MenuBar';
 import './image-grid.css'; // Import your custom CSS for the grid layout
 import './image-modal.css'; // Import your custom CSS for the modal overlay
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight, faX } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faTrashCan, faArrowRight, faX } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 
 
@@ -223,7 +223,7 @@ function Images() {
                             />
                             <h2>Click or drag and drop to upload</h2>
                         </div>
-                        {selectedFile && <p>{selectedFile.name}</p>}
+                        {selectedFile && <p className='selected-file'>{selectedFile.name}</p>}
                     </label>
                     <input type='text'
                         placeholder=" IMAGE DESCRIPTION"
@@ -241,13 +241,13 @@ function Images() {
                                 className='image-container'
                                 onClick={() => handleImageClick(index)}>
                                 <img className='image'
-                                    src={`http://192.168.55.105:3001/uploads/${image.filename}`} // Use the /uploads URL path
+                                    src={`http://192.168.2.8:3001/uploads/${image.filename}`} // Use the /uploads URL path
                                     alt={image.filename}
                                 />
                                 <p className='img-description'>{image.description}</p>
                             </div>
-                            <div><button className='delete-button' onClick={() => handleDeleteImage(image.id)}>DELETE</button>
-                            </div>
+                            {/* <div><button className='delete-button' onClick={() => handleDeleteImage(image.id)}>DELETE</button>
+                            </div> */}
                         </div>
                     ))}
                 </div>
@@ -260,9 +260,9 @@ function Images() {
                                     <FontAwesomeIcon icon={faArrowLeft} size='xlarge' style={{ color: "#ffffff" }} />
                                 </button>
                             )}
-
-                            <img height={600} width={850} src={`http://192.168.55.105:3001/uploads/${images[selectedImageIndex].filename}`} alt={images[selectedImageIndex].description} />
-
+                            <img height={600} width={850} src={`http://192.168.2.8:3001/uploads/${images[selectedImageIndex].filename}`} alt={images[selectedImageIndex].description} />
+                            <div><button className='delete-button' onClick={() => handleDeleteImage(images[selectedImageIndex].id)}><FontAwesomeIcon icon={faTrashCan} size='xlarge' style={{ color: "red" }} /></button>
+                            </div>
 
                             {selectedImageIndex < images.length - 1 && (
                                 <button className='next-button' onClick={showNextImage}>

@@ -702,6 +702,11 @@ h2 {
 /* Input file styles (hidden) */
 .input-file {
   display: none;
+
+}
+
+.selected-file {
+  font-family: pixel;
 }
 
 /* Description textarea styles */
@@ -740,7 +745,7 @@ textarea {
   color: #ff0000;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 
