@@ -1,45 +1,38 @@
 
 import React from 'react';
-import hosteldays1 from '../images/movies/HOSTELDAYS.jpg'
-import bro from '../images/movies/BRO.jpg'
-import ustaad from '../images/movies/USTAAD.jpg'
-import narayanaco from '../images/movies/NARAYANA & CO.jpg'
-import pizza3 from '../images/movies/PIZZA3.jpg'
-import hawa from '../images/movies/HAWA.jpg'
-import hosteldays from '../videos/movies/hosteldays.mp4'
+import Loki from '../images/series/Loki.jpg'
+import Moving from '../images/series/Moving.jpg'
+import One_piece from '../images/series/One_piece.jpg'
+import Star_Wars from '../images/series/Star_Wars.jpg'
+import The_continental from '../images/series/The_continental.jpg'
 import SeriesCard from './SeriesCard';
 
 
 
 const dummyMovies = [
     {
-        title: 'HOSTEL DAYS',
-        thumbnail: hosteldays1,
-        src: hosteldays
-    },
-    {
-        title: 'BRO',
-        thumbnail: bro,
+        title: 'LOKI',
+        thumbnail: Loki,
         src: ''
     },
     {
-        title: 'USTAAD',
-        thumbnail: ustaad,
+        title: 'MOVING',
+        thumbnail: Moving,
         src: ''
     },
     {
-        title: 'NARAYANA&CO',
-        thumbnail: narayanaco,
+        title: 'ONE PIECE',
+        thumbnail: One_piece,
         src: ''
     },
     {
-        title: 'PIZZA3',
-        thumbnail: pizza3,
+        title: 'STAR WARS',
+        thumbnail: Star_Wars,
         src: ''
     },
     {
-        title: 'HAWA',
-        thumbnail: hawa,
+        title: 'CONTINENTAL',
+        thumbnail: The_continental,
         src: ''
     },
 ];

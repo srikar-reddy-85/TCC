@@ -54,6 +54,7 @@ import menu from '../images/menu.png';
 import Chatcard from './Chatcard';
 import Movies from '../moviecomp/Movies';
 import Series from '../seriescomp/Series';
+import Anime from '../animecomp/Anime';
 import MenuBar from '../MenuBar';
 
 function Chat() {
@@ -78,9 +79,12 @@ function Chat() {
             <div>
                 <Movies />
             </div>
-            {/* <div>
+            <div>
                 <Series />
-            </div> */}
+            </div>
+            <div>
+                <Anime />
+            </div>
             <MenuBar isOpen={isMenuOpen} onClose={toggleMenu} />
         </div>
     );
